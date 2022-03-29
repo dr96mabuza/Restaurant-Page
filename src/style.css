@@ -1,0 +1,45 @@
+#content {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 80% 10%;
+}
+
+#header,
+#main,
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header{
+    flex-direction: row;
+    gap: 10px;
+}
+
+#main {
+    flex-direction: column;
+}
+
+#mainContentContainer {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#homeTab {
+    display: block;
+}
+
+.tabContent {
+    display: none;
+    position: absolute;
+    max-width: 600px;
+    padding: 15px;
+}
